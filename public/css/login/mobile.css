@@ -1,0 +1,21 @@
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
+
+@media screen and (max-width:450px) {
+
+    /* Structure */
+
+    .login-container {
+        width: 85%;
+        box-shadow: 21px 21px 42px #dbdbdb, -21px -21px 42px #ffffff;
+    }
+
+    /* Login Container */
+
+    .login-container .bottom {
+        padding: 16px 24px;
+    }
+
+}

@@ -1,0 +1,212 @@
+/* Color Pallete
+
+#5c6bc0 - Primary
+#f2f4ff - Secondary
+#689ed8 - Accent
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    font-family: 'Red Hat Text', sans-serif;
+    overflow: hidden;
+}
+
+/* Structure */
+
+.sidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc(100vh - 0px);
+    width: 300px;
+    padding: 8px 16px;
+    background: linear-gradient(145deg, #5360ad, #6272cd);
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    height: calc(100vh - 0px);
+    width: calc(100vw - 300px);
+    box-shadow: -5px -5px 10px #5360ad, 5px 5px 10px #6576d3;
+}
+
+.content .header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    height: 60px;
+    width: calc(100vw - 300px);
+}
+
+.content .body {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 8px 24px;
+    height: calc(100vh - 60px);
+    width: calc(100vw - 300px);
+}
+
+/* Sidebar */
+
+.sidebar .logo {
+    display: block;
+    margin: 8px;
+    height: 48px;
+    width: 48px;
+}
+
+.sidebar .spacer {
+    display: block;
+    margin: 0 auto;
+    height: 20px;
+    background-color: transparent;
+}
+
+.sidebar button {
+    display: block;
+    margin: 8px 0 auto;
+    padding: 12px 16px;
+    padding-left: 42px;
+    height: fit-content;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    background-color: transparent;
+    background-position: 8px 8px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    transition: all 0.05s;
+}
+
+.sidebar button:hover {
+    background-color: #689ed8;
+    box-shadow: -5px -5px 10px #5360ad, 5px 5px 10px #6576d3;
+}
+
+.sidebar .acct {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    margin: 0 auto;
+    height: fit-content;
+    width: 85%;
+}
+
+.sidebar .acct .settings {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 16px;
+    padding-left: 42px;
+    height: fit-content;
+    width: 75%;
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    background-color: transparent;
+    background-position: 8px 8px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.sidebar .acct .logout {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 16px;
+    height: fit-content;
+    width: 25%;
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    background-color: transparent;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.sidebar .acct button:hover {
+    background-color: #689ed8;
+    box-shadow: -5px -5px 10px #5360ad, 5px 5px 10px #6576d3;
+}
+
+/* Content */
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #5360ad;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5360ad;
+}
+
+p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+}
+
+.content .body .stats-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 16px 0 auto;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.content .body .stats-overview .spacer {
+    display: block;
+    margin: none;
+    height: 100%;
+    width: 24px;
+}
+
+.content .body .stats-overview .section {
+    display: block;
+    margin: none;
+    padding: 8px 16px;
+    height: 100%;
+    min-width: 24%;
+    background-color: #f5f5f5;
+    background-size: 24px;
+    background-position: 13px 14px;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px #e6e6e6, 5px 5px 10px #ffffff;
+}
+
+.content .body .stats-overview .section h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #689ed8;
+}
+
+.content .body .stats-overview .section h2 {
+    margin-left: 26px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5360ad;
+}
